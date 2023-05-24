@@ -70,10 +70,6 @@ class Runner:
                 stream.state = self.state
                 stream.sync()
                 self.state = stream.state
-            except OSError as e:
-                LOGGER.error(str(e))
-                exit(e.errno)
-
             except Exception as e:
                 LOGGER.error(str(e))
                 LOGGER.error('Failed to sync endpoint {}, moving on!'
