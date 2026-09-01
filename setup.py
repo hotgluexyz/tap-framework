@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
-import os.path
 
 setup(name='tap-framework',
       version='0.1.1',
@@ -13,8 +12,8 @@ setup(name='tap-framework',
       install_requires=[
           'singer-python>=5.1.0,<5.2.0',
           'backoff==1.3.2',
-          'requests>=2.18.4,<=2.20.0',
-          'requests-oauthlib==0.8.0',
-          'funcy==1.10.1',
+          'requests>=2.32.0',
+          'requests-oauthlib>=0.8.0',
+          'funcy>=1.18',
       ],
       packages=['tap_framework'])
